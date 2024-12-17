@@ -1,0 +1,384 @@
+06:43:18 DEBUG : Logs will be stored at '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/IDE.log'.
+06:43:19 INFO  : Launching XSCT server: xsct -n  -interactive /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/temp_xsdb_launch_script.tcl
+06:43:19 INFO  : Platform repository initialization has completed.
+06:43:19 INFO  : Registering command handlers for Vitis TCF services
+06:43:20 INFO  : XSCT server has started successfully.
+06:43:20 INFO  : Successfully done setting XSCT server connection channel  
+06:43:20 INFO  : Successfully done query RDI_DATADIR 
+06:43:20 INFO  : Successfully done setting workspace for the tool. 
+06:43:21 INFO  : plnx-install-location is set to ''
+06:48:33 INFO  : Result from executing command 'getProjects': ece385_final_s7_slave
+06:48:33 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202220_1|/home/ztn/Embedded/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/home/ztn/Embedded/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/home/ztn/Embedded/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+06:48:41 INFO  : Result from executing command 'getProjects': ece385_final_s7_slave
+06:48:41 INFO  : Result from executing command 'getPlatforms': ece385_final_s7_slave|/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/ece385_final_s7_slave.xpfm;xilinx_zcu102_base_202220_1|/home/ztn/Embedded/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/home/ztn/Embedded/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/home/ztn/Embedded/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+06:49:45 INFO  : Checking for BSP changes to sync application flags for project 'main'...
+06:50:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+06:50:02 INFO  : Jtag cable 'Digilent Zybo 210279288079A' is selected.
+06:50:02 INFO  : 'jtag frequency' command is executed.
+06:50:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279288079A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279288079A-0362f093-0"}' command is executed.
+06:50:03 INFO  : Device configured successfully with "/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream/ece385final_s7_slave.bit"
+06:50:03 INFO  : Context for processor 'microblaze_0' is selected.
+06:50:03 INFO  : Hardware design and registers information is loaded from '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/hw/ece385final_s7_slave.xsa'.
+06:50:03 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+06:50:03 INFO  : Context for processor 'microblaze_0' is selected.
+06:50:03 INFO  : System reset is completed.
+06:50:06 INFO  : 'after 3000' command is executed.
+06:50:06 INFO  : Context for processor 'microblaze_0' is selected.
+06:50:06 INFO  : The application '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+06:50:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279288079A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279288079A-0362f093-0"}
+fpga -file /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream/ece385final_s7_slave.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/hw/ece385final_s7_slave.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/Debug/main.elf
+----------------End of Script----------------
+
+06:50:06 INFO  : Context for processor 'microblaze_0' is selected.
+06:50:06 INFO  : 'con' command is executed.
+06:50:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+06:50:06 INFO  : Disconnected from the channel tcfchan#2.
+07:37:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:37:38 INFO  : Jtag cable 'Digilent Zybo 210279288079A' is selected.
+07:37:38 INFO  : 'jtag frequency' command is executed.
+07:37:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279288079A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279288079A-0362f093-0"}' command is executed.
+07:37:38 INFO  : Device configured successfully with "/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream/ece385final_s7_slave.bit"
+07:37:38 INFO  : Context for processor 'microblaze_0' is selected.
+07:37:38 INFO  : Hardware design and registers information is loaded from '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/hw/ece385final_s7_slave.xsa'.
+07:37:38 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+07:37:38 INFO  : Context for processor 'microblaze_0' is selected.
+07:37:38 INFO  : System reset is completed.
+07:37:41 INFO  : 'after 3000' command is executed.
+07:37:42 INFO  : Context for processor 'microblaze_0' is selected.
+07:37:42 INFO  : The application '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+07:37:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279288079A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279288079A-0362f093-0"}
+fpga -file /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream/ece385final_s7_slave.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/hw/ece385final_s7_slave.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/Debug/main.elf
+----------------End of Script----------------
+
+07:37:42 INFO  : Context for processor 'microblaze_0' is selected.
+07:37:42 INFO  : 'con' command is executed.
+07:37:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+07:37:42 INFO  : Disconnected from the channel tcfchan#3.
+08:13:03 INFO  : Hardware specification for platform project 'ece385_final_s7_slave' is updated.
+08:13:22 INFO  : Result from executing command 'getProjects': ece385_final_s7_slave
+08:13:22 INFO  : Result from executing command 'getPlatforms': ece385_final_s7_slave|/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/ece385_final_s7_slave.xpfm;xilinx_zcu102_base_202220_1|/home/ztn/Embedded/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/home/ztn/Embedded/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/home/ztn/Embedded/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+08:13:25 INFO  : Checking for BSP changes to sync application flags for project 'main'...
+08:16:46 INFO  : Hardware specification for platform project 'ece385_final_s7_slave' is updated.
+08:17:08 INFO  : Result from executing command 'getProjects': ece385_final_s7_slave
+08:17:08 INFO  : Result from executing command 'getPlatforms': ece385_final_s7_slave|/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/ece385_final_s7_slave.xpfm;xilinx_zcu102_base_202220_1|/home/ztn/Embedded/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/home/ztn/Embedded/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/home/ztn/Embedded/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+08:17:11 INFO  : Checking for BSP changes to sync application flags for project 'main'...
+08:17:17 INFO  : Checking for BSP changes to sync application flags for project 'main'...
+08:17:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:17:23 INFO  : Jtag cable 'Digilent Zybo 210279288079A' is selected.
+08:17:23 INFO  : 'jtag frequency' command is executed.
+08:17:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279288079A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279288079A-0362f093-0"}' command is executed.
+08:17:24 INFO  : Device configured successfully with "/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream/ece385final_s7_slave.bit"
+08:17:24 INFO  : Context for processor 'microblaze_0' is selected.
+08:17:24 INFO  : Hardware design and registers information is loaded from '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/hw/ece385final_s7_slave.xsa'.
+08:17:24 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+08:17:24 INFO  : Context for processor 'microblaze_0' is selected.
+08:17:24 INFO  : System reset is completed.
+08:17:27 INFO  : 'after 3000' command is executed.
+08:17:27 INFO  : Context for processor 'microblaze_0' is selected.
+08:17:27 INFO  : The application '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+08:17:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279288079A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279288079A-0362f093-0"}
+fpga -file /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream/ece385final_s7_slave.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/hw/ece385final_s7_slave.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/Debug/main.elf
+----------------End of Script----------------
+
+08:17:27 INFO  : Context for processor 'microblaze_0' is selected.
+08:17:27 INFO  : 'con' command is executed.
+08:17:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+08:17:27 INFO  : Disconnected from the channel tcfchan#6.
+09:40:39 DEBUG : Logs will be stored at '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/IDE.log'.
+09:40:39 INFO  : Launching XSCT server: xsct -n  -interactive /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/temp_xsdb_launch_script.tcl
+09:40:40 INFO  : XSCT server has started successfully.
+09:40:40 INFO  : Successfully done setting XSCT server connection channel  
+09:40:40 INFO  : plnx-install-location is set to ''
+09:40:40 INFO  : Platform repository initialization has completed.
+09:40:40 INFO  : Successfully done setting workspace for the tool. 
+09:40:40 INFO  : Successfully done query RDI_DATADIR 
+09:40:40 INFO  : Registering command handlers for Vitis TCF services
+09:40:47 INFO  : Checking for BSP changes to sync application flags for project 'main'...
+09:40:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:40:50 INFO  : Jtag cable 'Digilent Zybo 210279288079A' is selected.
+09:40:50 INFO  : 'jtag frequency' command is executed.
+09:40:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279288079A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279288079A-0362f093-0"}' command is executed.
+09:40:51 INFO  : Device configured successfully with "/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream/ece385final_s7_slave.bit"
+09:40:51 INFO  : Context for processor 'microblaze_0' is selected.
+09:40:51 INFO  : Hardware design and registers information is loaded from '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/hw/ece385final_s7_slave.xsa'.
+09:40:51 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:40:51 INFO  : Context for processor 'microblaze_0' is selected.
+09:40:51 INFO  : System reset is completed.
+09:40:54 INFO  : 'after 3000' command is executed.
+09:40:54 INFO  : Context for processor 'microblaze_0' is selected.
+09:40:54 INFO  : The application '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+09:40:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279288079A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279288079A-0362f093-0"}
+fpga -file /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream/ece385final_s7_slave.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/hw/ece385final_s7_slave.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/Debug/main.elf
+----------------End of Script----------------
+
+09:40:54 INFO  : Context for processor 'microblaze_0' is selected.
+09:40:54 INFO  : 'con' command is executed.
+09:40:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+09:40:54 INFO  : Disconnected from the channel tcfchan#1.
+09:53:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:53:45 INFO  : Jtag cable 'Digilent Zybo 210279288079A' is selected.
+09:53:45 INFO  : 'jtag frequency' command is executed.
+09:53:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279288079A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279288079A-0362f093-0"}' command is executed.
+09:53:46 INFO  : Device configured successfully with "/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream/ece385final_s7_slave.bit"
+09:53:46 INFO  : Context for processor 'microblaze_0' is selected.
+09:53:46 INFO  : Hardware design and registers information is loaded from '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/hw/ece385final_s7_slave.xsa'.
+09:53:46 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:53:46 INFO  : Context for processor 'microblaze_0' is selected.
+09:53:46 INFO  : System reset is completed.
+09:53:49 INFO  : 'after 3000' command is executed.
+09:53:49 INFO  : Context for processor 'microblaze_0' is selected.
+09:53:50 INFO  : The application '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+09:53:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279288079A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279288079A-0362f093-0"}
+fpga -file /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream/ece385final_s7_slave.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/hw/ece385final_s7_slave.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/Debug/main.elf
+----------------End of Script----------------
+
+09:53:50 INFO  : Context for processor 'microblaze_0' is selected.
+09:53:50 INFO  : 'con' command is executed.
+09:53:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+09:53:50 INFO  : Disconnected from the channel tcfchan#2.
+09:56:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:56:46 INFO  : Jtag cable 'Digilent Zybo 210279288079A' is selected.
+09:56:46 INFO  : 'jtag frequency' command is executed.
+09:56:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279288079A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279288079A-0362f093-0"}' command is executed.
+09:56:47 INFO  : Device configured successfully with "/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream/ece385final_s7_slave.bit"
+09:56:47 INFO  : Context for processor 'microblaze_0' is selected.
+09:56:47 INFO  : Hardware design and registers information is loaded from '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/hw/ece385final_s7_slave.xsa'.
+09:56:47 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:56:47 INFO  : Context for processor 'microblaze_0' is selected.
+09:56:47 INFO  : System reset is completed.
+09:56:50 INFO  : 'after 3000' command is executed.
+09:56:50 INFO  : Context for processor 'microblaze_0' is selected.
+09:56:50 INFO  : The application '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+09:56:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279288079A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279288079A-0362f093-0"}
+fpga -file /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream/ece385final_s7_slave.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/hw/ece385final_s7_slave.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/Debug/main.elf
+----------------End of Script----------------
+
+09:56:50 INFO  : Context for processor 'microblaze_0' is selected.
+09:56:50 INFO  : 'con' command is executed.
+09:56:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+09:56:50 INFO  : Disconnected from the channel tcfchan#3.
+04:58:20 DEBUG : Logs will be stored at '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/IDE.log'.
+04:58:21 INFO  : Launching XSCT server: xsct -n  -interactive /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/temp_xsdb_launch_script.tcl
+04:58:21 INFO  : Platform repository initialization has completed.
+04:58:22 INFO  : XSCT server has started successfully.
+04:58:22 INFO  : plnx-install-location is set to ''
+04:58:22 INFO  : Successfully done setting XSCT server connection channel  
+04:58:22 INFO  : Successfully done query RDI_DATADIR 
+04:58:22 INFO  : Successfully done setting workspace for the tool. 
+04:58:22 INFO  : Registering command handlers for Vitis TCF services
+05:20:59 INFO  : Checking for BSP changes to sync application flags for project 'main'...
+05:21:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+05:21:02 INFO  : Jtag cable 'Digilent Zybo 210279288079A' is selected.
+05:21:02 INFO  : 'jtag frequency' command is executed.
+05:21:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279288079A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279288079A-0362f093-0"}' command is executed.
+05:21:03 INFO  : Device configured successfully with "/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream/ece385final_s7_slave.bit"
+05:21:03 INFO  : Context for processor 'microblaze_0' is selected.
+05:21:03 INFO  : Hardware design and registers information is loaded from '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/hw/ece385final_s7_slave.xsa'.
+05:21:03 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+05:21:03 INFO  : Context for processor 'microblaze_0' is selected.
+05:21:03 INFO  : System reset is completed.
+05:21:06 INFO  : 'after 3000' command is executed.
+05:21:06 INFO  : Context for processor 'microblaze_0' is selected.
+05:21:06 INFO  : The application '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+05:21:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279288079A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279288079A-0362f093-0"}
+fpga -file /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream/ece385final_s7_slave.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/hw/ece385final_s7_slave.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/Debug/main.elf
+----------------End of Script----------------
+
+05:21:06 INFO  : Context for processor 'microblaze_0' is selected.
+05:21:06 INFO  : 'con' command is executed.
+05:21:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+05:21:06 INFO  : Disconnected from the channel tcfchan#1.
+05:28:11 INFO  : Checking for BSP changes to sync application flags for project 'main'...
+05:28:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+05:28:12 INFO  : Jtag cable 'Digilent Zybo 210279288079A' is selected.
+05:28:12 INFO  : 'jtag frequency' command is executed.
+05:28:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279288079A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279288079A-0362f093-0"}' command is executed.
+05:28:13 INFO  : Device configured successfully with "/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream/ece385final_s7_slave.bit"
+05:28:13 INFO  : Context for processor 'microblaze_0' is selected.
+05:28:13 INFO  : Hardware design and registers information is loaded from '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/hw/ece385final_s7_slave.xsa'.
+05:28:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+05:28:13 INFO  : Context for processor 'microblaze_0' is selected.
+05:28:13 INFO  : System reset is completed.
+05:28:16 INFO  : 'after 3000' command is executed.
+05:28:16 INFO  : Context for processor 'microblaze_0' is selected.
+05:28:17 INFO  : The application '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+05:28:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279288079A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279288079A-0362f093-0"}
+fpga -file /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream/ece385final_s7_slave.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/hw/ece385final_s7_slave.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/Debug/main.elf
+----------------End of Script----------------
+
+05:28:17 INFO  : Context for processor 'microblaze_0' is selected.
+05:28:17 INFO  : 'con' command is executed.
+05:28:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+05:28:17 INFO  : Disconnected from the channel tcfchan#2.
+05:32:36 INFO  : Hardware specification for platform project 'ece385_final_s7_slave' is updated.
+05:33:00 INFO  : Result from executing command 'getProjects': ece385_final_s7_slave
+05:33:00 INFO  : Result from executing command 'getPlatforms': ece385_final_s7_slave|/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/ece385_final_s7_slave.xpfm;xilinx_zcu102_base_202220_1|/home/ztn/Embedded/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/home/ztn/Embedded/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/home/ztn/Embedded/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+05:33:03 INFO  : Checking for BSP changes to sync application flags for project 'main'...
+05:33:03 WARN  : Failed to closehw "/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/hw/ece385final_s7_slave.xsa"
+Reason: Cannot close hw design '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/hw/ece385final_s7_slave.xsa'.
+Design is not opened in the current session.
+
+05:33:03 INFO  : Updating application flags with new BSP settings...
+05:33:03 INFO  : Successfully updated application flags for project main.
+05:33:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+05:33:07 INFO  : Jtag cable 'Digilent Zybo 210279288079A' is selected.
+05:33:07 INFO  : 'jtag frequency' command is executed.
+05:33:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279288079A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279288079A-0362f093-0"}' command is executed.
+05:33:08 INFO  : Device configured successfully with "/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream/ece385final_s7_slave.bit"
+05:33:08 INFO  : Context for processor 'microblaze_0' is selected.
+05:33:08 INFO  : Hardware design and registers information is loaded from '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/hw/ece385final_s7_slave.xsa'.
+05:33:08 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+05:33:08 INFO  : Context for processor 'microblaze_0' is selected.
+05:33:08 INFO  : System reset is completed.
+05:33:11 INFO  : 'after 3000' command is executed.
+05:33:11 INFO  : Context for processor 'microblaze_0' is selected.
+05:33:11 INFO  : The application '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/Debug/main.elf' is downloaded to processor 'microblaze_0'.
+05:33:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279288079A" && level==0 && jtag_device_ctx=="jsn-Zybo-210279288079A-0362f093-0"}
+fpga -file /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream/ece385final_s7_slave.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/hw/ece385final_s7_slave.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/Debug/main.elf
+----------------End of Script----------------
+
+05:33:11 INFO  : Context for processor 'microblaze_0' is selected.
+05:33:11 INFO  : 'con' command is executed.
+05:33:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+05:33:11 INFO  : Disconnected from the channel tcfchan#4.
+05:34:04 INFO  : Checking for BSP changes to sync application flags for project 'main'...
+05:34:15 INFO  : The hardware specification used by project 'main' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+05:34:15 INFO  : The file '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream/ece385final_s7_slave.bit' stored in project is removed.
+05:34:15 INFO  : The file '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream/ece385final_s7_slave.mmi' stored in project is removed.
+05:34:15 INFO  : The updated bitstream files are copied from platform to folder '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream' in project 'main'.
+05:34:51 INFO  : Bit file '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/_ide/bitstream/download.bit' is generated.
+06:08:23 DEBUG : Logs will be stored at '/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/IDE.log'.
+06:08:23 INFO  : Launching XSCT server: xsct -n  -interactive /home/ztn/Embedded/ECE385Final_S7_Slave/SDK/temp_xsdb_launch_script.tcl
+06:08:24 INFO  : Platform repository initialization has completed.
+06:08:24 INFO  : XSCT server has started successfully.
+06:08:24 INFO  : plnx-install-location is set to ''
+06:08:24 INFO  : Successfully done setting XSCT server connection channel  
+06:08:24 INFO  : Successfully done setting workspace for the tool. 
+06:08:24 INFO  : Successfully done query RDI_DATADIR 
+06:08:25 INFO  : Registering command handlers for Vitis TCF services

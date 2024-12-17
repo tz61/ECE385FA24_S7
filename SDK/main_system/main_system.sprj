@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="main_system" platform="/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/ece385_final_s7_slave.xpfm" platformUID="xilinx:::0.0(custom)" sysConfig="ece385_final_s7_slave" runtime="C/C++" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.377974921">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="main" domainName="standalone_domain" domainPrettyName="standalone on microblaze_0" appBuildConfig="Debug"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.1579543959">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="main" domainName="standalone_domain" domainPrettyName="standalone on microblaze_0" appBuildConfig="Release"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+  </configuration>
+</systemproject:SystemProject>

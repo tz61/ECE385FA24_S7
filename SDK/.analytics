@@ -1,0 +1,27 @@
+timestamp=[2024-12-10 06:43:19], mode=WORKBENCH_START, duration=0:00:02.409, duration_ms=2409, data={}
+timestamp=[2024-12-10 06:43:19], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.122, duration_ms=122, data={}
+timestamp=[2024-12-10 06:43:19], mode=WORKBENCH_UI_INIT, duration=0:00:00.418, duration_ms=418, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-12-10 06:48:34], mode=PLATFORM_CREATION, duration=0:00:00.555, duration_ms=555, data={platform_source=dsa, os=standalone, processor=microblaze, platform=null}
+timestamp=[2024-12-10 06:48:45], mode=PLATFORM_GENERATION, duration=0:00:04.331, duration_ms=4331, data={name=ece385_final_s7_slave}
+timestamp=[2024-12-10 06:48:54], mode=APP_CREATION, duration=0:00:00.779, duration_ms=779, data={name=main, project_type=sdk, os=standalone, processor=microblaze_0, runtime=C/C++, platform=ece385_final_s7_slave, application_type=application}
+timestamp=[2024-12-10 06:49:46], mode=BUILD, duration=0:00:00.624, duration_ms=624, data={name=main, configuration=Debug, clean_build=false}
+timestamp=[2024-12-10 08:13:25], mode=PLATFORM_GENERATION, duration=0:00:04.549, duration_ms=4549, data={name=ece385_final_s7_slave}
+timestamp=[2024-12-10 08:13:26], mode=BUILD, duration=0:00:00.422, duration_ms=422, data={name=main, configuration=Debug, clean_build=false}
+timestamp=[2024-12-10 08:17:11], mode=PLATFORM_GENERATION, duration=0:00:04.550, duration_ms=4550, data={name=ece385_final_s7_slave}
+timestamp=[2024-12-10 08:17:11], mode=BUILD, duration=0:00:00.520, duration_ms=520, data={name=main, configuration=Debug, clean_build=false}
+timestamp=[2024-12-10 08:17:17], mode=BUILD, duration=0:00:00.117, duration_ms=117, data={name=main, configuration=Debug, clean_build=false}
+timestamp=[2024-12-10 09:40:40], mode=WORKBENCH_START, duration=0:00:03.293, duration_ms=3293, data={}
+timestamp=[2024-12-10 09:40:40], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.141, duration_ms=141, data={}
+timestamp=[2024-12-10 09:40:40], mode=WORKBENCH_UI_INIT, duration=0:00:00.529, duration_ms=529, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,ece385_final_s7_slave,main,main_system}
+timestamp=[2024-12-10 09:40:48], mode=BUILD, duration=0:00:00.146, duration_ms=146, data={name=main, configuration=Debug, clean_build=false}
+timestamp=[2024-12-13 04:58:21], mode=WORKBENCH_START, duration=0:00:02.938, duration_ms=2938, data={}
+timestamp=[2024-12-13 04:58:21], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.120, duration_ms=120, data={}
+timestamp=[2024-12-13 04:58:22], mode=WORKBENCH_UI_INIT, duration=0:00:00.474, duration_ms=474, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,ece385_final_s7_slave,main,main_system}
+timestamp=[2024-12-13 05:20:59], mode=BUILD, duration=0:00:00.351, duration_ms=351, data={name=main, configuration=Debug, clean_build=false}
+timestamp=[2024-12-13 05:28:11], mode=BUILD, duration=0:00:00.321, duration_ms=321, data={name=main, configuration=Debug, clean_build=false}
+timestamp=[2024-12-13 05:33:03], mode=PLATFORM_GENERATION, duration=0:00:04.662, duration_ms=4662, data={name=ece385_final_s7_slave}
+timestamp=[2024-12-13 05:33:04], mode=BUILD, duration=0:00:00.571, duration_ms=571, data={name=main, configuration=Debug, clean_build=false}
+timestamp=[2024-12-13 05:34:05], mode=BUILD, duration=0:00:00.267, duration_ms=267, data={name=main, configuration=Debug, clean_build=false}
+timestamp=[2024-12-13 06:08:24], mode=WORKBENCH_START, duration=0:00:02.959, duration_ms=2959, data={}
+timestamp=[2024-12-13 06:08:24], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.129, duration_ms=129, data={}
+timestamp=[2024-12-13 06:08:25], mode=WORKBENCH_UI_INIT, duration=0:00:00.388, duration_ms=388, data={editors_count=2, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,ece385_final_s7_slave,main,main_system}

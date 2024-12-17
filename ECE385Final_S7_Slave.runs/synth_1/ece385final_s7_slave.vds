@@ -1,0 +1,670 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Dec 12 15:30:49 2024
+# Process ID: 29811
+# Current directory: /home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1
+# Command line: vivado -log ece385final_s7_slave.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ece385final_s7_slave.tcl
+# Log file: /home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/ece385final_s7_slave.vds
+# Journal file: /home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/vivado.jou
+# Running On: ztn-Legion-Y9000P-IRX8, OS: Linux, CPU Frequency: 953.455 MHz, CPU Physical cores: 24, Host memory: 67215 MB
+#-----------------------------------------------------------
+source ece385final_s7_slave.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/ztn/Embedded/Xilinx/Vivado/2022.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.srcs/utils_1/imports/synth_1/ece385final_s7_slave.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.srcs/utils_1/imports/synth_1/ece385final_s7_slave.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top ece385final_s7_slave -part xc7s50csga324-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 29847
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/ztn/Embedded/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1974.441 ; gain = 370.801 ; free physical = 47409 ; free virtual = 60345
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1332.656; parent = 1151.703; children = 180.953
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2963.410; parent = 1981.383; children = 982.027
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ece385final_s7_slave' [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ECE385Final_S7_Slave.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'hex_driver' [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/hex_driver.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'hex_driver' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/hex_driver.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'main_bd' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:1068]
+INFO: [Synth 8-6157] synthesizing module 'main_bd_axi_uartlite_0_0' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'main_bd_axi_uartlite_0_0' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'main_bd_clk_wiz_1_0' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'main_bd_clk_wiz_1_0' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'main_bd_gpio_usb_keycode_0' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_gpio_usb_keycode_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'main_bd_gpio_usb_keycode_0' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_gpio_usb_keycode_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'main_bd_axi_gpio_0_0' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'main_bd_axi_gpio_0_0' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'main_bd_axi_gpio_1_0' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_axi_gpio_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'main_bd_axi_gpio_1_0' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_axi_gpio_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'main_bd_axi_gpio_1_1' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_axi_gpio_1_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'main_bd_axi_gpio_1_1' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_axi_gpio_1_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'main_bd_mdm_1_0' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'main_bd_mdm_1_0' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'main_bd_microblaze_0_0' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'main_bd_microblaze_0_0' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'main_bd_microblaze_0_axi_intc_0' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'main_bd_microblaze_0_axi_intc_0' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'main_bd_microblaze_0_axi_periph_0' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:1795]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1IIL0NV' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1IIL0NV' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:12]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_ITU28O' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_ITU28O' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:144]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_4IKG2K' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_4IKG2K' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:276]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1652CYN' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:408]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1652CYN' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:408]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_1EWEX5G' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:540]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_1EWEX5G' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:540]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_DJQD5J' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:672]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_DJQD5J' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:672]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_RJXUHF' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:804]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_RJXUHF' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:804]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_1RII5ZK' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:936]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_1RII5ZK' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:936]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_INYUBR' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:3247]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_INYUBR' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:3247]
+INFO: [Synth 8-6157] synthesizing module 'main_bd_xbar_0' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'main_bd_xbar_0' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_xbar_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'main_bd_xbar_0' is unconnected for instance 'xbar' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:2972]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'main_bd_xbar_0' is unconnected for instance 'xbar' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:2972]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'main_bd_xbar_0' has 40 connections declared, but only 38 given [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:2972]
+INFO: [Synth 8-6155] done synthesizing module 'main_bd_microblaze_0_axi_periph_0' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:1795]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_SPJ5MJ' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:3013]
+INFO: [Synth 8-6157] synthesizing module 'main_bd_dlmb_bram_if_cntlr_0' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'main_bd_dlmb_bram_if_cntlr_0' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'main_bd_dlmb_v10_0' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'main_bd_dlmb_v10_0' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_dlmb_v10_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'main_bd_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:3159]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'main_bd_dlmb_v10_0' has 25 connections declared, but only 24 given [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:3159]
+INFO: [Synth 8-6157] synthesizing module 'main_bd_ilmb_bram_if_cntlr_0' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'main_bd_ilmb_bram_if_cntlr_0' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'main_bd_ilmb_v10_0' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'main_bd_ilmb_v10_0' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_ilmb_v10_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'main_bd_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:3205]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'main_bd_ilmb_v10_0' has 25 connections declared, but only 24 given [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:3205]
+INFO: [Synth 8-6157] synthesizing module 'main_bd_lmb_bram_0' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'main_bd_lmb_bram_0' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_lmb_bram_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'main_bd_lmb_bram_0' is unconnected for instance 'lmb_bram' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:3230]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'main_bd_lmb_bram_0' is unconnected for instance 'lmb_bram' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:3230]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'main_bd_lmb_bram_0' has 16 connections declared, but only 14 given [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:3230]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_SPJ5MJ' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:3013]
+INFO: [Synth 8-6157] synthesizing module 'main_bd_microblaze_0_xlconcat_0' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_microblaze_0_xlconcat_0/synth/main_bd_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'main_bd_microblaze_0_xlconcat_0' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_microblaze_0_xlconcat_0/synth/main_bd_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'main_bd_rst_clk_wiz_1_100M_0' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'main_bd_rst_clk_wiz_1_100M_0' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_rst_clk_wiz_1_100M_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'main_bd_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:1731]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'main_bd_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:1731]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'main_bd_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:1731]
+INFO: [Synth 8-6157] synthesizing module 'main_bd_axi_quad_spi_0_0' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_axi_quad_spi_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'main_bd_axi_quad_spi_0_0' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_axi_quad_spi_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'io0_t' of module 'main_bd_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:1740]
+WARNING: [Synth 8-7071] port 'io1_o' of module 'main_bd_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:1740]
+WARNING: [Synth 8-7071] port 'io1_t' of module 'main_bd_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:1740]
+WARNING: [Synth 8-7071] port 'sck_t' of module 'main_bd_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:1740]
+WARNING: [Synth 8-7071] port 'ss_t' of module 'main_bd_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:1740]
+WARNING: [Synth 8-7023] instance 'spi_usb' of module 'main_bd_axi_quad_spi_0_0' has 33 connections declared, but only 28 given [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:1740]
+INFO: [Synth 8-6157] synthesizing module 'main_bd_axi_timer_0_0' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_axi_timer_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'main_bd_axi_timer_0_0' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/.Xil/Vivado-29811-ztn-Legion-Y9000P-IRX8/realtime/main_bd_axi_timer_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'generateout0' of module 'main_bd_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:1769]
+WARNING: [Synth 8-7071] port 'generateout1' of module 'main_bd_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:1769]
+WARNING: [Synth 8-7071] port 'pwm0' of module 'main_bd_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:1769]
+WARNING: [Synth 8-7023] instance 'timer_usb_axi' of module 'main_bd_axi_timer_0_0' has 26 connections declared, but only 23 given [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:1769]
+INFO: [Synth 8-6155] done synthesizing module 'main_bd' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/synth/main_bd.v:1068]
+INFO: [Synth 8-6155] done synthesizing module 'ece385final_s7_slave' (0#1) [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ECE385Final_S7_Slave.sv:14]
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In103[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2053.348 ; gain = 449.707 ; free physical = 47407 ; free virtual = 60344
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1332.656; parent = 1151.703; children = 180.953
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3035.379; parent = 2053.352; children = 982.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2071.160 ; gain = 467.520 ; free physical = 47407 ; free virtual = 60344
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1332.656; parent = 1151.703; children = 180.953
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3053.191; parent = 2071.164; children = 982.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2071.160 ; gain = 467.520 ; free physical = 47407 ; free virtual = 60344
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1332.656; parent = 1151.703; children = 180.953
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3053.191; parent = 2071.164; children = 982.027
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2071.160 ; gain = 0.000 ; free physical = 47407 ; free virtual = 60344
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_microblaze_0_0/main_bd_microblaze_0_0/main_bd_microblaze_0_0_in_context.xdc] for cell 'bd_inst/microblaze_0'
+Finished Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_microblaze_0_0/main_bd_microblaze_0_0/main_bd_microblaze_0_0_in_context.xdc] for cell 'bd_inst/microblaze_0'
+Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_dlmb_v10_0/main_bd_dlmb_v10_0/main_bd_ilmb_v10_0_in_context.xdc] for cell 'bd_inst/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_dlmb_v10_0/main_bd_dlmb_v10_0/main_bd_ilmb_v10_0_in_context.xdc] for cell 'bd_inst/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_ilmb_v10_0/main_bd_ilmb_v10_0/main_bd_ilmb_v10_0_in_context.xdc] for cell 'bd_inst/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_ilmb_v10_0/main_bd_ilmb_v10_0/main_bd_ilmb_v10_0_in_context.xdc] for cell 'bd_inst/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_dlmb_bram_if_cntlr_0/main_bd_dlmb_bram_if_cntlr_0/main_bd_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'bd_inst/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_dlmb_bram_if_cntlr_0/main_bd_dlmb_bram_if_cntlr_0/main_bd_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'bd_inst/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_ilmb_bram_if_cntlr_0/main_bd_ilmb_bram_if_cntlr_0/main_bd_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'bd_inst/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_ilmb_bram_if_cntlr_0/main_bd_ilmb_bram_if_cntlr_0/main_bd_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'bd_inst/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_lmb_bram_0/main_bd_lmb_bram_0/main_bd_lmb_bram_0_in_context.xdc] for cell 'bd_inst/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_lmb_bram_0/main_bd_lmb_bram_0/main_bd_lmb_bram_0_in_context.xdc] for cell 'bd_inst/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_xbar_0/main_bd_xbar_0/main_bd_xbar_0_in_context.xdc] for cell 'bd_inst/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_xbar_0/main_bd_xbar_0/main_bd_xbar_0_in_context.xdc] for cell 'bd_inst/microblaze_0_axi_periph/xbar'
+Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_microblaze_0_axi_intc_0/main_bd_microblaze_0_axi_intc_0/main_bd_microblaze_0_axi_intc_0_in_context.xdc] for cell 'bd_inst/microblaze_0_axi_intc'
+Finished Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_microblaze_0_axi_intc_0/main_bd_microblaze_0_axi_intc_0/main_bd_microblaze_0_axi_intc_0_in_context.xdc] for cell 'bd_inst/microblaze_0_axi_intc'
+Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_mdm_1_0/main_bd_mdm_1_0/main_bd_mdm_1_0_in_context.xdc] for cell 'bd_inst/mdm_1'
+Finished Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_mdm_1_0/main_bd_mdm_1_0/main_bd_mdm_1_0_in_context.xdc] for cell 'bd_inst/mdm_1'
+Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_clk_wiz_1_0/main_bd_clk_wiz_1_0/main_bd_clk_wiz_1_0_in_context.xdc] for cell 'bd_inst/clk_wiz_1'
+Finished Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_clk_wiz_1_0/main_bd_clk_wiz_1_0/main_bd_clk_wiz_1_0_in_context.xdc] for cell 'bd_inst/clk_wiz_1'
+Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_rst_clk_wiz_1_100M_0/main_bd_rst_clk_wiz_1_100M_0/main_bd_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'bd_inst/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_rst_clk_wiz_1_100M_0/main_bd_rst_clk_wiz_1_100M_0/main_bd_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'bd_inst/rst_clk_wiz_1_100M'
+Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_axi_uartlite_0_0/main_bd_axi_uartlite_0_0/main_bd_axi_uartlite_0_0_in_context.xdc] for cell 'bd_inst/axi_uartlite_0'
+Finished Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_axi_uartlite_0_0/main_bd_axi_uartlite_0_0/main_bd_axi_uartlite_0_0_in_context.xdc] for cell 'bd_inst/axi_uartlite_0'
+Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_axi_gpio_0_0/main_bd_axi_gpio_0_0/main_bd_axi_gpio_0_0_in_context.xdc] for cell 'bd_inst/gpio_usb_int'
+Finished Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_axi_gpio_0_0/main_bd_axi_gpio_0_0/main_bd_axi_gpio_0_0_in_context.xdc] for cell 'bd_inst/gpio_usb_int'
+Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_axi_gpio_1_0/main_bd_axi_gpio_1_0/main_bd_axi_gpio_1_0_in_context.xdc] for cell 'bd_inst/gpio_usb_keycode'
+Finished Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_axi_gpio_1_0/main_bd_axi_gpio_1_0/main_bd_axi_gpio_1_0_in_context.xdc] for cell 'bd_inst/gpio_usb_keycode'
+Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_axi_quad_spi_0_0/main_bd_axi_quad_spi_0_0/main_bd_axi_quad_spi_0_0_in_context.xdc] for cell 'bd_inst/spi_usb'
+Finished Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_axi_quad_spi_0_0/main_bd_axi_quad_spi_0_0/main_bd_axi_quad_spi_0_0_in_context.xdc] for cell 'bd_inst/spi_usb'
+Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_axi_gpio_1_1/main_bd_axi_gpio_1_1/main_bd_axi_gpio_1_1_in_context.xdc] for cell 'bd_inst/gpio_usb_rst'
+Finished Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_axi_gpio_1_1/main_bd_axi_gpio_1_1/main_bd_axi_gpio_1_1_in_context.xdc] for cell 'bd_inst/gpio_usb_rst'
+Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_axi_timer_0_0/main_bd_axi_timer_0_0/main_bd_axi_timer_0_0_in_context.xdc] for cell 'bd_inst/timer_usb_axi'
+Finished Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_axi_timer_0_0/main_bd_axi_timer_0_0/main_bd_axi_timer_0_0_in_context.xdc] for cell 'bd_inst/timer_usb_axi'
+Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_gpio_usb_keycode_0/main_bd_gpio_usb_keycode_0/main_bd_gpio_usb_keycode_0_in_context.xdc] for cell 'bd_inst/gpio_touhou_control'
+Finished Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_gpio_usb_keycode_0/main_bd_gpio_usb_keycode_0/main_bd_gpio_usb_keycode_0_in_context.xdc] for cell 'bd_inst/gpio_touhou_control'
+Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'clk_100mhz'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'clk_100mhz'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[0]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[7]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[8]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[9]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[10]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[11]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[12]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[13]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[14]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[15]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[14]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[13]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[12]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[11]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[10]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[9]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[8]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[7]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[6]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[5]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[4]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[3]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[2]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[1]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_addr[0]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[2]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[1]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ba[0]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ras_n'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cas_n'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_we_n'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_cke'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_odt'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[0]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dm[1]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_p[0]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_n[0]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_p[1]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dqs_n[1]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ck_p'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ck_n'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_reset_n'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'qspi_flash_io0_io'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'qspi_flash_io1_io'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'qspi_flash_io2_io'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'qspi_flash_io3_io'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'qspi_flash_ss_io'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'sd_data[0]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:158]
+WARNING: [Vivado 12-584] No ports matched 'sd_data[1]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:159]
+WARNING: [Vivado 12-584] No ports matched 'sd_data[2]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:160]
+WARNING: [Vivado 12-584] No ports matched 'sd_data[3]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:161]
+WARNING: [Vivado 12-584] No ports matched 'sdcmd'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:162]
+WARNING: [Vivado 12-584] No ports matched 'sdclk'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:163]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tmds_clk_n'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:166]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tmds_clk_p'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:167]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tmds_data_n[0]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:169]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tmds_data_n[1]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:170]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tmds_data_n[2]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:171]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tmds_data_p[0]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:173]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tmds_data_p[1]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:174]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_tmds_data_p[2]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:175]
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:177]
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:178]
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:179]
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:180]
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:181]
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:182]
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:183]
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:184]
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:185]
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:186]
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:187]
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:188]
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:189]
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:190]
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:191]
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:192]
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:194]
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:195]
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:196]
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:197]
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:198]
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:199]
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:200]
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:201]
+WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:202]
+WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:203]
+WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:204]
+WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:205]
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:206]
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:207]
+WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:208]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc:208]
+Finished Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/ece385final_s7_slave_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ztn/Embedded/ECE385Final_S7_Slave/HDL/ChampaignBoard_S7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ece385final_s7_slave_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ece385final_s7_slave_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2223.910 ; gain = 0.000 ; free physical = 47407 ; free virtual = 60346
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2223.910 ; gain = 0.000 ; free physical = 47408 ; free virtual = 60346
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'bd_inst/spi_usb' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'bd_inst/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/ztn/Embedded/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2223.910 ; gain = 620.270 ; free physical = 47398 ; free virtual = 60337
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1332.656; parent = 1151.703; children = 180.953
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3173.926; parent = 2191.898; children = 982.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2223.910 ; gain = 620.270 ; free physical = 47399 ; free virtual = 60338
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1332.656; parent = 1151.703; children = 180.953
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3173.926; parent = 2191.898; children = 982.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  /home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_clk_wiz_1_0/main_bd_clk_wiz_1_0/main_bd_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  /home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.gen/sources_1/bd/main_bd/ip/main_bd_clk_wiz_1_0/main_bd_clk_wiz_1_0/main_bd_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_inst/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_inst/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_inst/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_inst/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_inst/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_inst/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_inst/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_inst/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_inst/microblaze_0_axi_intc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_inst/microblaze_0_xlconcat. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_inst/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_inst/clk_wiz_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_inst/rst_clk_wiz_1_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_inst/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_inst/gpio_usb_int. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_inst/gpio_usb_keycode. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_inst/spi_usb. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_inst/gpio_usb_rst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_inst/timer_usb_axi. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_inst/gpio_touhou_control. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2223.910 ; gain = 620.270 ; free physical = 47400 ; free virtual = 60338
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1332.656; parent = 1151.703; children = 180.953
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3173.926; parent = 2191.898; children = 982.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2223.910 ; gain = 620.270 ; free physical = 47399 ; free virtual = 60339
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1332.656; parent = 1151.703; children = 180.953
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3173.926; parent = 2191.898; children = 982.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design ece385final_s7_slave has port D0_SEG[7] driven by constant 1
+WARNING: [Synth 8-3917] design ece385final_s7_slave has port D1_SEG[7] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2223.910 ; gain = 620.270 ; free physical = 47406 ; free virtual = 60350
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1332.656; parent = 1151.703; children = 180.953
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3173.926; parent = 2191.898; children = 982.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'sys_clk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2223.910 ; gain = 620.270 ; free physical = 47411 ; free virtual = 60355
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1431.098; parent = 1250.207; children = 180.953
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3173.926; parent = 2191.898; children = 982.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2223.910 ; gain = 620.270 ; free physical = 47410 ; free virtual = 60354
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1433.672; parent = 1252.781; children = 180.953
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3173.926; parent = 2191.898; children = 982.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2223.910 ; gain = 620.270 ; free physical = 47409 ; free virtual = 60353
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1434.746; parent = 1253.855; children = 180.953
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3173.926; parent = 2191.898; children = 982.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2223.910 ; gain = 620.270 ; free physical = 47411 ; free virtual = 60355
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1435.086; parent = 1254.195; children = 180.953
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3173.926; parent = 2191.898; children = 982.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2223.910 ; gain = 620.270 ; free physical = 47411 ; free virtual = 60355
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1435.086; parent = 1254.195; children = 180.953
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3173.926; parent = 2191.898; children = 982.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2223.910 ; gain = 620.270 ; free physical = 47411 ; free virtual = 60355
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1435.117; parent = 1254.227; children = 180.953
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3173.926; parent = 2191.898; children = 982.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2223.910 ; gain = 620.270 ; free physical = 47411 ; free virtual = 60355
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1435.180; parent = 1254.289; children = 180.953
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3173.926; parent = 2191.898; children = 982.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2223.910 ; gain = 620.270 ; free physical = 47411 ; free virtual = 60355
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1435.180; parent = 1254.289; children = 180.953
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3173.926; parent = 2191.898; children = 982.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2223.910 ; gain = 620.270 ; free physical = 47411 ; free virtual = 60355
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1435.180; parent = 1254.289; children = 180.953
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3173.926; parent = 2191.898; children = 982.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------+----------+
+|      |BlackBox name                   |Instances |
++------+--------------------------------+----------+
+|1     |main_bd_xbar_0                  |         1|
+|2     |main_bd_axi_uartlite_0_0        |         1|
+|3     |main_bd_clk_wiz_1_0             |         1|
+|4     |main_bd_gpio_usb_keycode_0      |         1|
+|5     |main_bd_axi_gpio_0_0            |         1|
+|6     |main_bd_axi_gpio_1_0            |         1|
+|7     |main_bd_axi_gpio_1_1            |         1|
+|8     |main_bd_mdm_1_0                 |         1|
+|9     |main_bd_microblaze_0_0          |         1|
+|10    |main_bd_microblaze_0_axi_intc_0 |         1|
+|11    |main_bd_rst_clk_wiz_1_100M_0    |         1|
+|12    |main_bd_axi_quad_spi_0_0        |         1|
+|13    |main_bd_axi_timer_0_0           |         1|
+|14    |main_bd_dlmb_bram_if_cntlr_0    |         1|
+|15    |main_bd_dlmb_v10_0              |         1|
+|16    |main_bd_ilmb_bram_if_cntlr_0    |         1|
+|17    |main_bd_ilmb_v10_0              |         1|
+|18    |main_bd_lmb_bram_0              |         1|
++------+--------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------+------+
+|      |Cell                          |Count |
++------+------------------------------+------+
+|1     |main_bd_axi_gpio_0            |     1|
+|2     |main_bd_axi_gpio_1            |     2|
+|4     |main_bd_axi_quad_spi_0        |     1|
+|5     |main_bd_axi_timer_0           |     1|
+|6     |main_bd_axi_uartlite_0        |     1|
+|7     |main_bd_clk_wiz_1             |     1|
+|8     |main_bd_dlmb_bram_if_cntlr    |     1|
+|9     |main_bd_dlmb_v10              |     1|
+|10    |main_bd_gpio_usb_keycode      |     1|
+|11    |main_bd_ilmb_bram_if_cntlr    |     1|
+|12    |main_bd_ilmb_v10              |     1|
+|13    |main_bd_lmb_bram              |     1|
+|14    |main_bd_mdm_1                 |     1|
+|15    |main_bd_microblaze_0          |     1|
+|16    |main_bd_microblaze_0_axi_intc |     1|
+|17    |main_bd_rst_clk_wiz_1_100M    |     1|
+|18    |main_bd_xbar                  |     1|
+|19    |CARRY4                        |     9|
+|20    |LUT1                          |     3|
+|21    |LUT2                          |     1|
+|22    |LUT3                          |     5|
+|23    |LUT4                          |     3|
+|24    |LUT5                          |    16|
+|25    |LUT6                          |    57|
+|26    |FDRE                          |    33|
+|27    |IBUF                          |     7|
+|28    |OBUF                          |    38|
++------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2223.910 ; gain = 620.270 ; free physical = 47411 ; free virtual = 60355
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1435.211; parent = 1254.320; children = 180.953
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3173.926; parent = 2191.898; children = 982.027
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2223.910 ; gain = 467.520 ; free physical = 47411 ; free virtual = 60355
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2223.910 ; gain = 620.270 ; free physical = 47411 ; free virtual = 60355
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2223.910 ; gain = 0.000 ; free physical = 47463 ; free virtual = 60407
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2223.910 ; gain = 0.000 ; free physical = 47405 ; free virtual = 60350
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 89933e0d
+INFO: [Common 17-83] Releasing license: Synthesis
+105 Infos, 231 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2223.910 ; gain = 893.363 ; free physical = 47472 ; free virtual = 60416
+INFO: [Common 17-1381] The checkpoint '/home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/synth_1/ece385final_s7_slave.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ece385final_s7_slave_utilization_synth.rpt -pb ece385final_s7_slave_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 12 15:31:06 2024...

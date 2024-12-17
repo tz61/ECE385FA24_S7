@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="scw_hwspec" value="/home/ztn/Embedded/ECE385Final_S7_Slave"/>
+	<item key="scw_hwspec_file_selection" value="/home/ztn/Embedded/ECE385Final_S7_Slave"/>
+	<item key="fpga_elf_mem_selection" value="/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/main/Debug"/>
+</section>

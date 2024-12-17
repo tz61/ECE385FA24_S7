@@ -1,0 +1,20 @@
+Nothing to build in platform 'ece385_final_s7_slave'
+
+05:34:04 **** Incremental Build of configuration Debug for project main ****
+make all 
+Building file: ../src/lw_usb_main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lw_usb_main.o" -I/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/sw/ece385_final_s7_slave/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lw_usb_main.d" -MT"src/lw_usb_main.o" -o "src/lw_usb_main.o" "../src/lw_usb_main.c"
+Finished building: ../src/lw_usb_main.c
+ 
+Building target: main.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/ztn/Embedded/ECE385Final_S7_Slave/SDK/ece385_final_s7_slave/export/ece385_final_s7_slave/sw/ece385_final_s7_slave/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "main.elf" ./src/lw_usb/HID.o ./src/lw_usb/MAX3421E.o ./src/lw_usb/transfer.o  ./src/lw_usb_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: main.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size main.elf  |tee "main.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24460	    504	   3700	  28664	   6ff8	main.elf
+Finished building: main.elf.size
+ 

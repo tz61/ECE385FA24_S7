@@ -1,0 +1,15 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Thu Dec 12 15:31:50 2024
+| Host         : ztn-Legion-Y9000P-IRX8 running 64-bit Ubuntu 24.04.1 LTS
+| Command      : report_bus_skew -warn_on_violation -file ece385final_s7_slave_bus_skew_routed.rpt -pb ece385final_s7_slave_bus_skew_routed.pb -rpx ece385final_s7_slave_bus_skew_routed.rpx
+| Design       : ece385final_s7_slave
+| Device       : 7s50-csga324
+| Speed File   : -2  PRODUCTION 1.23 2018-06-13
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

@@ -1,0 +1,20 @@
+
+*** Running vivado
+    with args -log main_bd_dlmb_v10_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source main_bd_dlmb_v10_0.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source main_bd_dlmb_v10_0.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: main_bd_dlmb_v10_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 0987ae78a5be07e6 to dir: /home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/main_bd_dlmb_v10_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.cache/ip/2022.2/0/9/0987ae78a5be07e6/main_bd_ilmb_v10_0_sim_netlist.v to /home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/main_bd_dlmb_v10_0_synth_1/main_bd_dlmb_v10_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.cache/ip/2022.2/0/9/0987ae78a5be07e6/main_bd_ilmb_v10_0.dcp to /home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/main_bd_dlmb_v10_0_synth_1/main_bd_dlmb_v10_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.cache/ip/2022.2/0/9/0987ae78a5be07e6/main_bd_ilmb_v10_0_stub.v to /home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/main_bd_dlmb_v10_0_synth_1/main_bd_dlmb_v10_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.cache/ip/2022.2/0/9/0987ae78a5be07e6/main_bd_ilmb_v10_0_stub.vhdl to /home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/main_bd_dlmb_v10_0_synth_1/main_bd_dlmb_v10_0_stub.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.cache/ip/2022.2/0/9/0987ae78a5be07e6/main_bd_ilmb_v10_0_sim_netlist.vhdl to /home/ztn/Embedded/ECE385Final_S7_Slave/ECE385Final_S7_Slave.runs/main_bd_dlmb_v10_0_synth_1/main_bd_dlmb_v10_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP main_bd_dlmb_v10_0, cache-ID = 0987ae78a5be07e6.
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  9 16:41:02 2024...
